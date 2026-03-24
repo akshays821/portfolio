@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/Akshayshaji.webp';
+// import profileImage from '../../assets/Akshayshaji.webp';
 import resume from '../../assets/akshayshaji.pdf';
 
 const Hero = () => {
@@ -92,14 +92,36 @@ const Hero = () => {
 
                             {/* Image Container */}
                             <div className="absolute inset-10 rounded-full overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] bg-slate-900 border-4 border-slate-800/50 flex items-center justify-center group z-10 backdrop-blur-sm">
-                                <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
-                                    <img
-                                        src={profileImage}
-                                        alt="Akshay Shaji"
-                                        className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transform transition-all duration-500 group-hover:scale-110"
-                                    />
-                                    {/* Overlay gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-300"></div>
+                                <div className="relative w-full h-full flex items-center justify-center overflow-hidden bg-[#050510]">
+                                    {/* Artificial Core / Tech Node Representation */}
+                                    <div className="relative w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+                                        
+                                        {/* Outer energy field */}
+                                        <div className="absolute w-4/5 h-4/5 border border-violet-500/20 rounded-full animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+                                        <div className="absolute w-3/4 h-3/4 border border-fuchsia-500/20 rounded-full animate-[spin_8s_linear_infinite] border-t-fuchsia-500"></div>
+                                        <div className="absolute w-2/3 h-2/3 border border-violet-400/10 rounded-full animate-[spin_12s_linear_infinite_reverse] border-b-violet-400 border-l-violet-400"></div>
+                                        
+                                        {/* Core SVG Structure (Hexagon/Cube/Node) */}
+                                        <svg className="w-1/2 h-1/2 text-violet-500 drop-shadow-[0_0_25px_rgba(139,92,246,0.6)] animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(139,92,246,0.05)"/>
+                                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                                            <path d="M12 22V12" />
+                                            <path d="M2 7v10" />
+                                            <path d="M22 7v10" />
+                                            
+                                            {/* Inner glowing core */}
+                                            <circle cx="12" cy="12" r="3" fill="currentColor" className="text-fuchsia-400 animate-[ping_3s_ease-out_infinite]" />
+                                            <circle cx="12" cy="12" r="1.5" fill="currentColor" className="text-white drop-shadow-[0_0_10px_#fff]" />
+                                        </svg>
+                                        
+                                        {/* Floating Node Particles */}
+                                        <div className="absolute top-[25%] left-[30%] w-2 h-2 bg-fuchsia-400 rounded-full shadow-[0_0_10px_#e879f9] animate-[bounce_2.5s_infinite]"></div>
+                                        <div className="absolute bottom-[35%] right-[25%] w-1.5 h-1.5 bg-violet-300 rounded-full shadow-[0_0_10px_#c4b5fd] animate-[ping_2s_infinite]"></div>
+                                        <div className="absolute top-[35%] right-[30%] w-2 h-2 bg-blue-400 rounded-full shadow-[0_0_10px_#60a5fa] animate-[bounce_3s_infinite_reverse]"></div>
+                                    </div>
+                                    
+                                    {/* Responsive Overlay gradient to blend bottom edge */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-90 group-hover:opacity-50 transition-opacity duration-500"></div>
                                 </div>
                             </div>
 

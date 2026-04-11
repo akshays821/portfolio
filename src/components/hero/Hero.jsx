@@ -1,6 +1,6 @@
 import React from 'react';
-// import profileImage from '../../assets/Akshayshaji.webp';
-import resume from '../../assets/akshayshaji.pdf';
+import profileImage from '../../assets/my profile photo.jpg';
+import resume from '../../assets/Akshay_Shaji_Resume_v3.pdf';
 
 const Hero = () => {
     return (
@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-slate-900/20 blur-[120px] animate-pulse delay-700 z-0" />
 
             {/* Grid Pattern Overlay */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 z-0 mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] z-0"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -47,14 +47,14 @@ const Hero = () => {
                                 <div className="text-xl md:text-2xl font-medium text-slate-300 h-auto">
                                     Full Stack Developer <span className="text-slate-600 mx-2">|</span>
                                     <span className="text-violet-400 font-bold whitespace-nowrap">
-                                        MERN Stack • Automation • AI
+                                        MERN & Next.js • Freelance • Automation
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <p className="text-lg text-slate-400 max-w-2xl leading-relaxed mx-auto md:mx-0 border-l-4 border-slate-800 pl-4">
-                            Building end-to-end web applications with AI-assisted workflows and solid core fundamentals.
+                            Building end-to-end web applications with solid core fundamentals and AI-assisted workflows, delivering high-quality full-stack solutions for freelance clients.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start pt-4">
@@ -93,76 +93,57 @@ const Hero = () => {
                             {/* Image Container */}
                             <div className="absolute inset-10 rounded-full overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] bg-slate-900 border-4 border-slate-800/50 flex items-center justify-center group z-10 backdrop-blur-sm">
                                 <div className="relative w-full h-full flex items-center justify-center overflow-hidden bg-[#050510]">
-                                    {/* Artificial Core / Tech Node Representation */}
+                                    {/* Profile Image Representation */}
                                     <div className="relative w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                                        
-                                        {/* Outer energy field */}
-                                        <div className="absolute w-4/5 h-4/5 border border-violet-500/20 rounded-full animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
-                                        <div className="absolute w-3/4 h-3/4 border border-fuchsia-500/20 rounded-full animate-[spin_8s_linear_infinite] border-t-fuchsia-500"></div>
-                                        <div className="absolute w-2/3 h-2/3 border border-violet-400/10 rounded-full animate-[spin_12s_linear_infinite_reverse] border-b-violet-400 border-l-violet-400"></div>
-                                        
-                                        {/* Core SVG Structure (Hexagon/Cube/Node) */}
-                                        <svg className="w-1/2 h-1/2 text-violet-500 drop-shadow-[0_0_25px_rgba(139,92,246,0.6)] animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(139,92,246,0.05)"/>
-                                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
-                                            <path d="M12 22V12" />
-                                            <path d="M2 7v10" />
-                                            <path d="M22 7v10" />
-                                            
-                                            {/* Inner glowing core */}
-                                            <circle cx="12" cy="12" r="3" fill="currentColor" className="text-fuchsia-400 animate-[ping_3s_ease-out_infinite]" />
-                                            <circle cx="12" cy="12" r="1.5" fill="currentColor" className="text-white drop-shadow-[0_0_10px_#fff]" />
-                                        </svg>
-                                        
-                                        {/* Floating Node Particles */}
-                                        <div className="absolute top-[25%] left-[30%] w-2 h-2 bg-fuchsia-400 rounded-full shadow-[0_0_10px_#e879f9] animate-[bounce_2.5s_infinite]"></div>
-                                        <div className="absolute bottom-[35%] right-[25%] w-1.5 h-1.5 bg-violet-300 rounded-full shadow-[0_0_10px_#c4b5fd] animate-[ping_2s_infinite]"></div>
-                                        <div className="absolute top-[35%] right-[30%] w-2 h-2 bg-blue-400 rounded-full shadow-[0_0_10px_#60a5fa] animate-[bounce_3s_infinite_reverse]"></div>
+                                        <img 
+                                            src={profileImage} 
+                                            alt="Akshay Shaji" 
+                                            className="w-full h-full object-cover object-[center_20%]"
+                                        />
                                     </div>
-                                    
+
                                     {/* Responsive Overlay gradient to blend bottom edge */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-90 group-hover:opacity-50 transition-opacity duration-500"></div>
                                 </div>
                             </div>
 
                             {/* Float Elements (Icons) */}
-                            {/* React - Top Left */}
-                            <div className="hidden md:block absolute top-8 left-8 bg-slate-800/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[3000ms] z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute top-8 left-8 bg-slate-800 p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-[float_6s_ease-in-out_infinite] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-9 h-9" alt="React" />
                             </div>
 
                             {/* Angular - Top Right */}
-                            <div className="hidden md:block absolute top-8 right-8 bg-slate-800/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[4000ms] delay-700 z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute top-8 right-8 bg-slate-800 p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-[float_7s_ease-in-out_infinite_reverse] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" className="w-9 h-9" alt="Angular" />
                             </div>
 
                             {/* Node.js - Bottom Right */}
-                            <div className="hidden md:block absolute bottom-8 right-8 bg-slate-800/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[3500ms] delay-500 z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute bottom-8 right-8 bg-slate-800 p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-[float_5s_ease-in-out_infinite] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-9 h-9" alt="NodeJS" />
                             </div>
 
                             {/* MongoDB - Bottom Left */}
-                            <div className="hidden md:block absolute bottom-8 left-8 bg-slate-800/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[4500ms] delay-200 z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute bottom-8 left-8 bg-slate-800 p-3.5 rounded-2xl border border-slate-700 shadow-xl animate-[float_6.5s_ease-in-out_infinite_reverse] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-9 h-9" alt="MongoDB" />
                             </div>
 
                             {/* HTML5 - Bottom Center */}
-                            <div className="hidden md:block absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[5000ms] delay-300 z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-800 p-3 rounded-2xl border border-slate-700 shadow-xl animate-[float_5.5s_ease-in-out_infinite] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="w-8 h-8" alt="HTML5" />
                             </div>
 
                             {/* CSS3 - Top Center */}
-                            <div className="hidden md:block absolute -top-10 left-1/2 transform -translate-x-1/2 bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[5500ms] delay-100 z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute -top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 p-3 rounded-2xl border border-slate-700 shadow-xl animate-[float_7.5s_ease-in-out_infinite_reverse] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="w-8 h-8" alt="CSS3" />
                             </div>
 
                             {/* JavaScript - Right Center */}
-                            <div className="hidden md:block absolute top-1/2 -right-10 transform -translate-y-1/2 bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[4200ms] delay-[150ms] z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute top-1/2 -right-10 transform -translate-y-1/2 bg-slate-800 p-3 rounded-2xl border border-slate-700 shadow-xl animate-[float_6.2s_ease-in-out_infinite] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-8 h-8" alt="JavaScript" />
                             </div>
 
                             {/* n8n - Left Center */}
-                            <div className="hidden md:block absolute top-1/2 -left-10 transform -translate-y-1/2 bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl border border-slate-700 shadow-xl animate-bounce duration-[3800ms] delay-[400ms] z-20 hover:scale-110 transition-transform cursor-pointer">
+                            <div className="hidden md:block absolute top-1/2 -left-10 transform -translate-y-1/2 bg-slate-800 p-3 rounded-2xl border border-slate-700 shadow-xl animate-[float_5.8s_ease-in-out_infinite_reverse] z-20 hover:scale-110 transition-transform cursor-pointer">
                                 <img src="https://n8n.io/favicon.ico" className="w-8 h-8" alt="n8n" />
                             </div>
                         </div>
@@ -173,11 +154,12 @@ const Hero = () => {
 
             <style jsx global>{`
                 @keyframes fade-in-up {
-                    0% { opacity: 0; transform: translateY(20px); }
-                    100% { opacity: 1; transform: translateY(0); }
+                    0% { opacity: 0; transform: translate3d(0, 20px, 0); }
+                    100% { opacity: 1; transform: translate3d(0, 0, 0); }
                 }
                 .animate-fade-in-up {
                     animation: fade-in-up 0.8s ease-out forwards;
+                    will-change: opacity, transform;
                 }
                 @keyframes float {
                     0%, 100% { transform: translateY(0) rotate(-6deg); }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resume from '../../assets/akshayshaji.pdf';
+import resume from '../../assets/Akshay_Shaji_Resume_v3.pdf';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900/95 border-b border-slate-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo Section */}

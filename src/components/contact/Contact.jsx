@@ -96,7 +96,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header */}
-                <div className="text-center mb-16 animate-fade-in-up">
+                <div className="text-center mb-16 reveal-on-scroll opacity-0">
                     <h2 className="text-sm font-bold tracking-widest text-fuchsia-500 uppercase mb-2">Get In Touch</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Contact Me</h3>
                     <p className="text-slate-400 max-w-xl mx-auto">
@@ -130,7 +130,7 @@ const Contact = () => {
 
                     {/* Placeholder for Form (Future) */}
                     {/* Contact Form */}
-                    <div className="mt-16 w-full max-w-3xl bg-slate-800/30 p-8 rounded-2xl border border-slate-700/50 backdrop-blur-sm animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                    <div className="mt-16 w-full max-w-3xl bg-slate-800/30 p-8 rounded-2xl border border-slate-700/50 backdrop-blur-sm reveal-on-scroll opacity-0" style={{ animationDelay: '0.2s' }}>
                         <h4 className="text-2xl font-bold text-white mb-8 text-center">Send Me a Message</h4>
                         <form ref={form} className="space-y-6" onSubmit={sendEmail}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

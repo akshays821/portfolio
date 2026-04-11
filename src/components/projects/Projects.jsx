@@ -3,11 +3,21 @@ import shopAI from '../../assets/shopAI.png';
 import connectHub from '../../assets/connecthub.png';
 import pharmPal from '../../assets/pharmpal.png';
 import hacaLanding from '../../assets/hacaLanding.jpeg';
+import flygreen from '../../assets/flygreen.png';
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
+        {
+            id: 0,
+            title: "Fly Green Exports – Client Freelance Project",
+            shortDescription: "Dynamic Next.js exporting platform with a custom neumorphic admin dashboard.",
+            fullDescription: "Migrated a static HTML/CSS web app for an international exporting company to a fully dynamic Next.js application. Built a complete admin dashboard from scratch with a custom neumorphic UI featuring full CRUD for products, banners, and categories. Integrated Firebase Auth with 72-hour session expiry and imgbb API for image uploads. Implemented dynamic category filtering, WhatsApp inquiry integration, and a robust banner management system.",
+            image: flygreen,
+            tags: ["Next.js", "Firebase", "Tailwind CSS", "Freelance"],
+            liveLink: "https://www.flygreenexports.com/"
+        },
         {
             id: 1,
             title: "ShopAI – AI-Powered E-Commerce App",
@@ -70,7 +80,7 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header */}
-                <div className="text-center mb-16 animate-fade-in-up">
+                <div className="text-center mb-16 reveal-on-scroll opacity-0">
                     <h2 className="text-sm font-bold tracking-widest text-violet-500 uppercase mb-2">My Work</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h3>
                     <div className="w-16 h-1 bg-violet-500 mx-auto mt-6 rounded-full" />
@@ -78,8 +88,8 @@ const Projects = () => {
 
                 {/* Projects Content */}
                 <div className="space-y-16">
-                    {/* Featured Project - ShopAI */}
-                    {projects.filter(p => p.id === 1).map(project => (
+                    {/* Featured Projects */}
+                    {projects.filter(p => p.id === 0 || p.id === 1).map(project => (
                         <div key={project.id} className="space-y-4">
                             <h4 className="text-xl font-semibold text-violet-400 flex items-center gap-2">
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
@@ -100,7 +110,7 @@ const Projects = () => {
                                 </div>
 
                                 {/* Content Section - Spans 2 cols */}
-                                <div className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-center bg-slate-900/90 backdrop-blur-sm">
+                                <div className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-center bg-slate-900/90">
                                     <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-violet-400 transition-colors">{project.title}</h3>
                                     <p className="text-slate-400 text-lg mb-6 leading-relaxed hidden sm:block">
                                         {project.fullDescription.substring(0, 150)}...
@@ -129,7 +139,7 @@ const Projects = () => {
                     <div className="space-y-4">
                         <h4 className="text-xl font-semibold text-slate-400">More Projects</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {projects.filter(p => p.id !== 1).map((project) => (
+                            {projects.filter(p => p.id !== 0 && p.id !== 1).map((project) => (
                                 <div
                                     key={project.id}
                                     onClick={() => openModal(project)}
@@ -174,7 +184,7 @@ const Projects = () => {
             {selectedProject && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
                     <div
-                        className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
+                        className="absolute inset-0 bg-black/90 transition-opacity"
                         onClick={closeModal}
                     ></div>
 
@@ -247,7 +257,7 @@ const Projects = () => {
                                         className="flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-500 text-white rounded-lg font-medium transition-colors shadow-lg shadow-violet-900/20"
                                     >
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-                                        Live Demo
+                                        {selectedProject.id === 0 ? "Live" : "Live Demo"}
                                     </a>
                                 )}
                             </div>

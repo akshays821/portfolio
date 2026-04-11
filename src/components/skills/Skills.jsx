@@ -8,6 +8,7 @@ const Skills = () => {
     const skillsData = [
         // Frontend
         { name: 'React.js', category: 'Frontend', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'Next.js', category: 'Frontend', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', darkBg: true },
         { name: 'Redux Toolkit', category: 'Frontend', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg' },
         { name: 'JavaScript', category: 'Frontend', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
         { name: 'HTML5', category: 'Frontend', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
@@ -21,6 +22,7 @@ const Skills = () => {
         { name: 'JWT', category: 'Backend', icon: 'https://jwt.io/img/pic_logo.svg' },
 
         // Database
+        { name: 'Firebase Firestore', category: 'Database', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
         { name: 'MongoDB', category: 'Database', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
         { name: 'Mongoose', category: 'Database', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png' },
         { name: 'MongoDB Atlas', category: 'Database', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
@@ -45,7 +47,7 @@ const Skills = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header */}
-                <div className="text-center mb-12 animate-fade-in-up">
+                <div className="text-center mb-12 reveal-on-scroll opacity-0">
                     <h2 className="text-sm font-bold tracking-widest text-fuchsia-500 uppercase mb-2">Expertise</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Technical Skills</h3>
                     <p className="text-slate-400 max-w-2xl mx-auto">
@@ -55,7 +57,7 @@ const Skills = () => {
                 </div>
 
                 {/* Filter Tabs */}
-                <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+                <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 reveal-on-scroll opacity-0" style={{ animationDelay: '0.1s' }}>
                     {categories.map((category) => (
                         <button
                             key={category}

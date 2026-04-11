@@ -16,7 +16,7 @@ const About = () => {
     ];
 
     const skills = [
-        "React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit",
+        "React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Firebase Firestore", "Redux Toolkit",
         "HTML5", "CSS3", "JavaScript (ES6+)", "Tailwind CSS", "Socket.IO", "Git", "RESTful APIs", "JWT", "Postman", "AI-Assisted Dev", "Workflow Automation"
     ];
 
@@ -29,7 +29,7 @@ const About = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header */}
-                <div className="text-center mb-16 animate-fade-in-up">
+                <div className="text-center mb-16 reveal-on-scroll opacity-0">
                     <h2 className="text-sm font-bold tracking-widest text-fuchsia-500 uppercase mb-2">My Story</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white">About Me</h3>
                     <div className="w-16 h-1 bg-violet-500 mx-auto mt-4 rounded-full" />
@@ -38,13 +38,13 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-start">
 
                     {/* Left Column: Bio & Personal Info */}
-                    <div className="space-y-8 animate-fade-in-up">
-                        <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 backdrop-blur-sm shadow-xl hover:shadow-violet-500/10 transition-all duration-300">
+                    <div className="space-y-8 reveal-on-scroll opacity-0">
+                        <div className="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/50 shadow-xl hover:shadow-violet-500/10 transition-all duration-300">
                             <h4 className="text-2xl font-semibold text-white mb-4">
                                 Hello, I'm <span className="text-violet-400">Akshay Shaji</span>
                             </h4>
                             <p className="text-lg font-medium text-slate-200 mb-2">
-                                Full Stack Developer
+                                Freelance Full-Stack Developer
                             </p>
                             <p className="text-sm text-slate-400 mb-6 flex items-center gap-2">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -52,8 +52,8 @@ const About = () => {
                             </p>
 
                             <p className="leading-relaxed text-slate-300 mb-4">
-                                Entry-Level Full Stack Developer with hands-on experience building end-to-end web applications using React.js, Node.js, Express.js, and MongoDB.
-                                I use a strongly AI-assisted development workflow to explore solutions, debug efficiently, and iterate faster.
+                                Freelance Full-Stack Developer with real-world experience delivering end-to-end web applications for clients, specializing in MongoDB, Express.js, Node.js, React.js, Next.js, and Firebase.
+                                I use a strongly AI-assisted development workflow to architect solutions, debug efficiently, and iterate faster from concept to production.
                             </p>
 
                             <p className="leading-relaxed text-slate-300 mb-6 border-l-4 border-violet-500 pl-4 bg-slate-800/30 py-2 rounded-r-lg">
@@ -67,7 +67,7 @@ const About = () => {
                     </div>
 
                     {/* Right Column: Experience & Skills */}
-                    <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                    <div className="space-y-8 reveal-on-scroll opacity-0" style={{ animationDelay: '0.2s' }}>
                         {/* Skills */}
                         <div className="mb-10">
                             <h4 className="text-2xl font-semibold text-white mb-6">Technical Arsenal</h4>
